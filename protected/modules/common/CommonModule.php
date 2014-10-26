@@ -1,6 +1,6 @@
 <?php
 
-class AdminModule extends CWebModule
+class CommonModule extends CWebModule
 {
 	public function init()
 	{
@@ -9,9 +9,9 @@ class AdminModule extends CWebModule
 
 		// import the module-level models and components
 		$this->setImport(array(
+			'common.models.*',
 			'admin.models.*',
-			'admin.components.*',
-			'admin.controllers.*',
+			'common.components.*',
 		));
 	}
 

@@ -1,5 +1,4 @@
 <?php
-require_once(dirname(__FILE__).'createdbadmin.php')
 class DefaultController extends Controller
 {
 	public $layout = '//layouts/columninstall';
@@ -31,10 +30,8 @@ class DefaultController extends Controller
 	{
 		$modules=new CActiveDataProvider('Modules', array(
 			'criteria'=>array(
-					'condition'=>'isinstall=0',
 			),
 			'countCriteria'=>array(
-					'condition'=>'isinstall=1',
 					// 'order' and 'with' clauses have no meaning for the count query
 			),
 			'pagination'=>array(

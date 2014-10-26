@@ -16,6 +16,7 @@ class SiteController extends Controller
 
 	public function actionIndex()
 	{
+		Yii::app()->getModule('admin');
 		if (Yii::app()->user->id !== null)
 		{
 			$user = Useraccess::model()->findbyattributes(array('username'=>Yii::app()->user->id));

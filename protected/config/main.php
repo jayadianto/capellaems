@@ -30,7 +30,7 @@ return array(
 		),
 		'install'=>array(),
 		'admin'=>array(),
-		'article'=>array()
+		'common'=>array()
 	),	
 	
 	'components'=>array(
